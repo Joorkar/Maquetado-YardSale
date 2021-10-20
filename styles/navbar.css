@@ -1,14 +1,12 @@
-@font-face {
-  font-family: Quicksand;
-  src: local('../assets/fonts/quicksand-v24-latin-300.woff2'), local('../assets/fonts/quicksand-v24-latin-500.woff2'), local('../assets/fonts/quicksand-v24-latin-700.woff2');
-}
-
 :root {
   --white: #fff;
   --black: #000;
   --very-light-pink: #c7c7c7;
   --text-input-field: #f7f7f7;
   --hospital-green: #acd9b2;
+  --sm: 1.4rem;
+  --md: 1.6rem;
+  --lg: 1.8rem;
 }
 
 * {
@@ -24,8 +22,3 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
 }
-
-.login {
-  width: 100%;
-}
-
