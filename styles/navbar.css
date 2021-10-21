@@ -13,6 +13,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -21,4 +23,88 @@ html {
 
 body {
   font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid var(--very-light-pink);
+}
+
+.menu {
+  display: none;
+}
+
+.logo {
+  width: 120px;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left ul {
+  margin-left: 12px;
+}
+
+.navbar-right ul,
+.navbar-left ul {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-left ul li a {
+  padding: 6px 10px 6px 10px;
+  border-radius: 8px;
+  font-size: var(--sm);
+  color: var(--very-light-pink);
+}
+
+.navbar-left ul li a:hover {
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+}
+
+.navbar-email {
+  margin-right: 12px;
+  color: var(--very-light-pink);
+  font-size: var(--sm);
+}
+
+.navbar-shopping-cart {
+  position: relative;
+}
+
+.navbar-shopping-cart div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -6px;
+  right: -3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--hospital-green);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .menu {
+    display: block;
+  }
+
+  .navbar-left ul {
+    display: none;
+  }
+
+  .navbar-email {
+    display: none;
+  }
 }
